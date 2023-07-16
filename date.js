@@ -1,5 +1,5 @@
 
-module.exports.getDate = () => {
+exports.getDate = () => {
   console.log(module);
 
   var today = new Date();
@@ -10,8 +10,7 @@ module.exports.getDate = () => {
     month: "long"
   };
   
-  var day = today.toLocaleDateString("en-US", options);
 
-  return day;
+  return today.toLocaleDateString("en-US", options);
 }
 
